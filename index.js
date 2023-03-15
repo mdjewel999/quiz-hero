@@ -109,7 +109,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
     localStorage.setItem(
       "results",
@@ -136,6 +136,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
 
   // Right side bar/ answer section
+  console.log(storage)
   let x = setTimeout(() => {
     showAnswers(answers);
     displayResult.innerHTML = `<div
@@ -183,4 +184,5 @@ document.querySelector("#submit").addEventListener("click", () => {
     clearTimeout(x);
   }, 1500);
   window.scrollTo(0, 0);
+  // document.getElementById('displayResult').appendChild(displayResult)
 });
