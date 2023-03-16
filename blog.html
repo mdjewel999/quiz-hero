@@ -13,10 +13,11 @@
 <body class="container bg-success bg-gradient bg-opacity-25">
 
     <h1 class="text-center mt-4 fs-1"> Question And Answers</h1>
+    <hr>
     <div class="accordion mt-5" id="accordionExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button fs-3" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button fs-3 rounded" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Question-1 : map, filter, forEach, find What is the difference?
                 </button>
@@ -28,29 +29,34 @@
                     returns undefined and map() returns a new array with the transformed elements. Even if they do the
                     same job, the returning value remains different. <br>
 
-                    <strong>map: </strong> The map method creates a new array by applying a callback function to each element of the
+                    <strong>map: </strong> The map method creates a new array by applying a callback function to each
+                    element of the
                     original array. The callback function returns a new value that will be used as the corresponding
                     element in the new array. <br>
 
-                    <strong>filter: </strong>The filter method creates a new array with all the elements from the original array that
+                    <strong>filter: </strong>The filter method creates a new array with all the elements from the
+                    original array that
                     satisfy a condition specified by a callback function. The callback function must return a boolean
                     value indicating whether the element should be included in the new array. <br>
 
-                    <strong>forEach: </strong>The forEach method simply iterates over each element of the array and applies a callback
+                    <strong>forEach: </strong>The forEach method simply iterates over each element of the array and
+                    applies a callback
                     function to it. It does not create a new array, nor does it modify the original array. <br>
 
-                   <strong> find: </strong>The find method returns the first element of the array that satisfies a condition specified by
+                    <strong> find: </strong>The find method returns the first element of the array that satisfies a
+                    condition specified by
                     a callback function. The callback function must return a boolean value indicating whether the
                     element satisfies the condition. <br>
 
-                    <strong>In summary,</strong> map and filter create new arrays, forEach simply iterates over the array, and find
+                    <strong>In summary,</strong> map and filter create new arrays, forEach simply iterates over the
+                    array, and find
                     returns the first element that satisfies a condition.
                 </div>
             </div>
         </div><br>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed fs-3 rounded" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Question-2 : What is the difference localStorage ,section stroage, cookeyes ?
                 </button>
@@ -93,7 +99,7 @@
         </div><br>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed fs-3 rounded" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Question-3 : what is EventLoop ?
                 </button>
@@ -126,7 +132,7 @@
         </div><br>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed fs-3 rounded" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     Question-4 : How the quizTime Function work?
                 </button>
@@ -134,18 +140,19 @@
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body fs-5">
-                    As an AI language model, I don't have access to any specific "quiztime" function, as this term could
-                    refer to various functions depending on the programming language or context in which it is used.
-                    <br>
+                    The quizTimer function takes one argument, dismiss, which is a boolean. It uses this argument to
+                    determine whether to clear an interval timer (clearInterval(timer)) and return if dismiss is true.
+                    If dismiss is false, it sets an interval timer (setInterval) that executes a function every second.
+                    The inner function updates the content of an HTML element with the ID of count by incrementing a
+                    count variable and formatting the time in minutes and seconds. It also changes the color of the text
+                    every time the count variable goes over 60 seconds.
 
-                    Can you provide more information about the programming language or context in which the "quiztime"
-                    function is used? This would help me provide a more accurate answer.
                 </div>
             </div>
         </div><br>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed fs-3 rounded" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     Question-5 : How the ChooseQuiz Function work?
                 </button>
@@ -153,19 +160,14 @@
             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body fs-5">
-                    As an AI language model, I don't have access to any specific "ChooseQuiz" function, as this term
-                    could refer to various functions depending on the programming language or context in which it is
-                    used. <br>
+                    The chooseQuiz function takes two parameters: index, which is the index of the quiz in a larger
+                    collection, and givenAns, which is the answer provided by the user. The function checks if the quiz
+                    has already been answered and updates the user's answer if it has. If not, it adds the quiz and the
+                    answer to the answers array. Then it calls the displayAnswers function. <br>
 
-                    However, based on its name, it can be assumed that the function is related to selecting a quiz or a
-                    set of questions. Depending on the implementation, the ChooseQuiz function may take input from the
-                    user to select a specific quiz or it may randomly select a quiz from a list of available quizzes.
-                    <br>
-
-                    The ChooseQuiz function may also be responsible for retrieving the selected quiz or set of questions
-                    from a database or a file and returning it to the program for further processing. The specific
-                    implementation of the ChooseQuiz function will depend on the requirements and the design of the
-                    application or program that it is used in.
+                    The displayAnswers function takes one parameter: data, an array of the user's answers to the
+                    quizzes. The function generates a set of HTML elements that displays the quiz questions, the given
+                    answer, and the correct answer for each quiz. It returns a string of generated HTML code.
                 </div>
             </div>
         </div>
