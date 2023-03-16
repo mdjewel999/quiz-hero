@@ -5,51 +5,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap</title>
+    <title>Question And Answers</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 </head>
 
 <body class="container bg-success bg-gradient bg-opacity-25">
 
-    <h1 class="text-center mt-4 fs-1"> Question and Answers</h1>
+    <h1 class="text-center mt-4 fs-1"> Question And Answers</h1>
     <div class="accordion mt-5" id="accordionExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+                <button class="accordion-button fs-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Question-1 : map, filter, forEach, find What is the difference?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body fs-5">
-                    The main difference between map, filter, forEach, and find in JavaScript is the way they operate on
-                    arrays.
+                    The first difference between map() and forEach() is the returning value. The forEach() method
+                    returns undefined and map() returns a new array with the transformed elements. Even if they do the
+                    same job, the returning value remains different. <br>
 
-                    map: The map method creates a new array by applying a callback function to each element of the
+                    <strong>map: </strong> The map method creates a new array by applying a callback function to each element of the
                     original array. The callback function returns a new value that will be used as the corresponding
-                    element in the new array.
+                    element in the new array. <br>
 
-                    filter: The filter method creates a new array with all the elements from the original array that
+                    <strong>filter: </strong>The filter method creates a new array with all the elements from the original array that
                     satisfy a condition specified by a callback function. The callback function must return a boolean
-                    value indicating whether the element should be included in the new array.
+                    value indicating whether the element should be included in the new array. <br>
 
-                    forEach: The forEach method simply iterates over each element of the array and applies a callback
-                    function to it. It does not create a new array, nor does it modify the original array.
+                    <strong>forEach: </strong>The forEach method simply iterates over each element of the array and applies a callback
+                    function to it. It does not create a new array, nor does it modify the original array. <br>
 
-                    find: The find method returns the first element of the array that satisfies a condition specified by
+                   <strong> find: </strong>The find method returns the first element of the array that satisfies a condition specified by
                     a callback function. The callback function must return a boolean value indicating whether the
-                    element satisfies the condition.
+                    element satisfies the condition. <br>
 
-                    In summary, map and filter create new arrays, forEach simply iterates over the array, and find
+                    <strong>In summary,</strong> map and filter create new arrays, forEach simply iterates over the array, and find
                     returns the first element that satisfies a condition.
                 </div>
             </div>
         </div><br>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Question-2 : What is the difference localStorage ,section stroage, cookeyes ?
                 </button>
@@ -80,7 +81,8 @@
                     automatically deleted from the user's browser. The storage capacity of cookies is usually smaller
                     than that of localStorage or sessionStorage. <br>
 
-                    <strong>In summary,</strong> localStorage and sessionStorage are client-side storage mechanisms that allow you to
+                    <strong>In summary,</strong> localStorage and sessionStorage are client-side storage mechanisms that
+                    allow you to
                     store data on the user's browser, while cookies are small text files that are stored on the user's
                     browser by the website they are visiting. LocalStorage is used to store data that should be
                     available across multiple browser sessions, while sessionStorage is used to store data that should
@@ -91,7 +93,7 @@
         </div><br>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Question-3 : what is EventLoop ?
                 </button>
@@ -124,9 +126,9 @@
         </div><br>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Question-4 : What is the function of quiztime function?
+                    Question-4 : How the quizTime Function work?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
@@ -143,9 +145,9 @@
         </div><br>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Question-5 : What is the function of ChooseQuiz function?
+                    Question-5 : How the ChooseQuiz Function work?
                 </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
@@ -157,7 +159,8 @@
 
                     However, based on its name, it can be assumed that the function is related to selecting a quiz or a
                     set of questions. Depending on the implementation, the ChooseQuiz function may take input from the
-                    user to select a specific quiz or it may randomly select a quiz from a list of available quizzes. <br>
+                    user to select a specific quiz or it may randomly select a quiz from a list of available quizzes.
+                    <br>
 
                     The ChooseQuiz function may also be responsible for retrieving the selected quiz or set of questions
                     from a database or a file and returning it to the program for further processing. The specific
